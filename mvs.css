@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: montserrat;
+    background-color: #1d1d1d;
+  }
+  nav{
+    background: #2c2c2c;
+    height: 80px;
+    width: 100%;
+  }
+
+  .vis-text
+  {
+    text-transform: capitalize;
+    background-color: #141414;
+    color: #2c2c2c;
+  }
+
+  label.logo{
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    font-size: 35px;
+    line-height: 80px;  
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: #3d3d3d;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #3d3d3d;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  section{
+    background-size: cover;
+    height: calc(100vh - 80px);
+  }
+
+h1
+{
+    font-size: 100px;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+}
+
+p
+{
+    margin: 50px;
+    font-size: 100px;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+/* From uiverse.io by @alexruix */
+.card {
+    height: 254px;
+    width: 190px;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 1em;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+    ;
+   }
+   
+    /*Image*/
+   .card-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background: #0a3394;
+    background: linear-gradient(to top, #0a3394, #4286f4);
+   }
+   
+   /*Description */
+   .card-description {
+    display: flex;
+    position: absolute;
+    gap: 1em;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    height: 70%;
+    bottom: 0;
+    border-radius: 1em 1em 0 0;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 1rem;
+   }
+   
+   /*Text*/
+   .text-title {
+    font-size: 1.4em;
+    font-weight: 700;
+   }
+   
+   .text-body {
+    font-size: 1em;
+    line-height: 150%;
+   }
+   
+   
+   /* Hover states */
+   
+   .card:hover .card-description {
+    transform: translateY(100%);
+   }
+   
+   .wrapper1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-top: 80px;
+  }
+  
+  .movies-area {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  
+  .single-movie {
+    padding: 0 15px 20px;
+    transition: all 0.5s;
+    overflow: hidden;
+    margin-top: 60px;
+    color: white;
+    text-align: center;
+  }
+  .single-movie:hover {
+    transition: 0.5s;
+    -webkit-transform: scale(1.09);
+    -ms-transform: scale(1.09);
+    transform: scale(1.09);
+  }
